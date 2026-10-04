@@ -16,5 +16,10 @@ public:
 	int GetLenght() const { return lenght; }
 
 	const char* c_str() const { return string; }
+
+	String& operator=(const String&);
+
+	char operator[](int index) const;
+	char& operator[](int index);
 };
 
